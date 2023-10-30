@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEAAA9EC2AED0F7400433D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAAA9EB2AED0F7400433D50 /* AppDelegate.swift */; };
+		BEAAA9EE2AED0F7400433D50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAAA9ED2AED0F7400433D50 /* SceneDelegate.swift */; };
+		BEAAA9F32AED0F7400433D50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAAA9F12AED0F7400433D50 /* Main.storyboard */; };
+		BEAAA9F52AED0F7500433D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAAA9F42AED0F7500433D50 /* Assets.xcassets */; };
+		BEAAA9F82AED0F7500433D50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAAA9F62AED0F7500433D50 /* LaunchScreen.storyboard */; };
+		BEAAAA032AED0F7500433D50 /* SybolRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAAAA022AED0F7500433D50 /* SybolRollerTests.swift */; };
+		BEAAAA0D2AED0F7500433D50 /* SybolRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAAAA0C2AED0F7500433D50 /* SybolRollerUITests.swift */; };
+		BEAAAA0F2AED0F7500433D50 /* SybolRollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAAAA0E2AED0F7500433D50 /* SybolRollerUITestsLaunchTests.swift */; };
+		BEAAAA1C2AED126600433D50 /* SymbolRollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAAAA1B2AED126600433D50 /* SymbolRollerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEAAA9FF2AED0F7500433D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAAA9E02AED0F7400433D50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAAA9E72AED0F7400433D50;
+			remoteInfo = SybolRoller;
+		};
+		BEAAAA092AED0F7500433D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAAA9E02AED0F7400433D50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAAA9E72AED0F7400433D50;
+			remoteInfo = SybolRoller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEAAA9E82AED0F7400433D50 /* SybolRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SybolRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAAA9EB2AED0F7400433D50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEAAA9ED2AED0F7400433D50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BEAAA9F22AED0F7400433D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEAAA9F42AED0F7500433D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEAAA9F72AED0F7500433D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEAAA9F92AED0F7500433D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAAA9FE2AED0F7500433D50 /* SybolRollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SybolRollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAAAA022AED0F7500433D50 /* SybolRollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolRollerTests.swift; sourceTree = "<group>"; };
+		BEAAAA082AED0F7500433D50 /* SybolRollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SybolRollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAAAA0C2AED0F7500433D50 /* SybolRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolRollerUITests.swift; sourceTree = "<group>"; };
+		BEAAAA0E2AED0F7500433D50 /* SybolRollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolRollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEAAAA1B2AED126600433D50 /* SymbolRollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRollerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEAAA9E52AED0F7400433D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAAA9FB2AED0F7500433D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAAAA052AED0F7500433D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEAAA9DF2AED0F7400433D50 = {
+			isa = PBXGroup;
+			children = (
+				BEAAA9EA2AED0F7400433D50 /* SybolRoller */,
+				BEAAAA012AED0F7500433D50 /* SybolRollerTests */,
+				BEAAAA0B2AED0F7500433D50 /* SybolRollerUITests */,
+				BEAAA9E92AED0F7400433D50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAAA9E92AED0F7400433D50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAAA9E82AED0F7400433D50 /* SybolRoller.app */,
+				BEAAA9FE2AED0F7500433D50 /* SybolRollerTests.xctest */,
+				BEAAAA082AED0F7500433D50 /* SybolRollerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAAA9EA2AED0F7400433D50 /* SybolRoller */ = {
+			isa = PBXGroup;
+			children = (
+				BEAAA9EB2AED0F7400433D50 /* AppDelegate.swift */,
+				BEAAA9ED2AED0F7400433D50 /* SceneDelegate.swift */,
+				BEAAAA1B2AED126600433D50 /* SymbolRollerViewController.swift */,
+				BEAAA9F12AED0F7400433D50 /* Main.storyboard */,
+				BEAAA9F42AED0F7500433D50 /* Assets.xcassets */,
+				BEAAA9F62AED0F7500433D50 /* LaunchScreen.storyboard */,
+				BEAAA9F92AED0F7500433D50 /* Info.plist */,
+			);
+			path = SybolRoller;
+			sourceTree = "<group>";
+		};
+		BEAAAA012AED0F7500433D50 /* SybolRollerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAAAA022AED0F7500433D50 /* SybolRollerTests.swift */,
+			);
+			path = SybolRollerTests;
+			sourceTree = "<group>";
+		};
+		BEAAAA0B2AED0F7500433D50 /* SybolRollerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAAAA0C2AED0F7500433D50 /* SybolRollerUITests.swift */,
+				BEAAAA0E2AED0F7500433D50 /* SybolRollerUITestsLaunchTests.swift */,
+			);
+			path = SybolRollerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAAA9E72AED0F7400433D50 /* SybolRoller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAAAA122AED0F7500433D50 /* Build configuration list for PBXNativeTarget "SybolRoller" */;
+			buildPhases = (
+				BEAAA9E42AED0F7400433D50 /* Sources */,
+				BEAAA9E52AED0F7400433D50 /* Frameworks */,
+				BEAAA9E62AED0F7400433D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SybolRoller;
+			productName = SybolRoller;
+			productReference = BEAAA9E82AED0F7400433D50 /* SybolRoller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEAAA9FD2AED0F7500433D50 /* SybolRollerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAAAA152AED0F7500433D50 /* Build configuration list for PBXNativeTarget "SybolRollerTests" */;
+			buildPhases = (
+				BEAAA9FA2AED0F7500433D50 /* Sources */,
+				BEAAA9FB2AED0F7500433D50 /* Frameworks */,
+				BEAAA9FC2AED0F7500433D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAAAA002AED0F7500433D50 /* PBXTargetDependency */,
+			);
+			name = SybolRollerTests;
+			productName = SybolRollerTests;
+			productReference = BEAAA9FE2AED0F7500433D50 /* SybolRollerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEAAAA072AED0F7500433D50 /* SybolRollerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAAAA182AED0F7500433D50 /* Build configuration list for PBXNativeTarget "SybolRollerUITests" */;
+			buildPhases = (
+				BEAAAA042AED0F7500433D50 /* Sources */,
+				BEAAAA052AED0F7500433D50 /* Frameworks */,
+				BEAAAA062AED0F7500433D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAAAA0A2AED0F7500433D50 /* PBXTargetDependency */,
+			);
+			name = SybolRollerUITests;
+			productName = SybolRollerUITests;
+			productReference = BEAAAA082AED0F7500433D50 /* SybolRollerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAAA9E02AED0F7400433D50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BEAAA9E72AED0F7400433D50 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					BEAAA9FD2AED0F7500433D50 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BEAAA9E72AED0F7400433D50;
+					};
+					BEAAAA072AED0F7500433D50 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BEAAA9E72AED0F7400433D50;
+					};
+				};
+			};
+			buildConfigurationList = BEAAA9E32AED0F7400433D50 /* Build configuration list for PBXProject "SybolRoller" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEAAA9DF2AED0F7400433D50;
+			productRefGroup = BEAAA9E92AED0F7400433D50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAAA9E72AED0F7400433D50 /* SybolRoller */,
+				BEAAA9FD2AED0F7500433D50 /* SybolRollerTests */,
+				BEAAAA072AED0F7500433D50 /* SybolRollerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEAAA9E62AED0F7400433D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAAA9F82AED0F7500433D50 /* LaunchScreen.storyboard in Resources */,
+				BEAAA9F52AED0F7500433D50 /* Assets.xcassets in Resources */,
+				BEAAA9F32AED0F7400433D50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAAA9FC2AED0F7500433D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAAAA062AED0F7500433D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEAAA9E42AED0F7400433D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAAA9EC2AED0F7400433D50 /* AppDelegate.swift in Sources */,
+				BEAAA9EE2AED0F7400433D50 /* SceneDelegate.swift in Sources */,
+				BEAAAA1C2AED126600433D50 /* SymbolRollerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAAA9FA2AED0F7500433D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAAAA032AED0F7500433D50 /* SybolRollerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAAAA042AED0F7500433D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAAAA0F2AED0F7500433D50 /* SybolRollerUITestsLaunchTests.swift in Sources */,
+				BEAAAA0D2AED0F7500433D50 /* SybolRollerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEAAAA002AED0F7500433D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAAA9E72AED0F7400433D50 /* SybolRoller */;
+			targetProxy = BEAAA9FF2AED0F7500433D50 /* PBXContainerItemProxy */;
+		};
+		BEAAAA0A2AED0F7500433D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAAA9E72AED0F7400433D50 /* SybolRoller */;
+			targetProxy = BEAAAA092AED0F7500433D50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEAAA9F12AED0F7400433D50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAAA9F22AED0F7400433D50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEAAA9F62AED0F7500433D50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAAA9F72AED0F7500433D50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEAAAA102AED0F7500433D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEAAAA112AED0F7500433D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAAAA132AED0F7500433D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SybolRoller/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moon.SybolRoller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAAAA142AED0F7500433D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SybolRoller/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moon.SybolRoller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEAAAA162AED0F7500433D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moon.SybolRollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SybolRoller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SybolRoller";
+			};
+			name = Debug;
+		};
+		BEAAAA172AED0F7500433D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moon.SybolRollerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SybolRoller.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SybolRoller";
+			};
+			name = Release;
+		};
+		BEAAAA192AED0F7500433D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moon.SybolRollerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SybolRoller;
+			};
+			name = Debug;
+		};
+		BEAAAA1A2AED0F7500433D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = moon.SybolRollerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SybolRoller;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEAAA9E32AED0F7400433D50 /* Build configuration list for PBXProject "SybolRoller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAAAA102AED0F7500433D50 /* Debug */,
+				BEAAAA112AED0F7500433D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAAAA122AED0F7500433D50 /* Build configuration list for PBXNativeTarget "SybolRoller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAAAA132AED0F7500433D50 /* Debug */,
+				BEAAAA142AED0F7500433D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAAAA152AED0F7500433D50 /* Build configuration list for PBXNativeTarget "SybolRollerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAAAA162AED0F7500433D50 /* Debug */,
+				BEAAAA172AED0F7500433D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAAAA182AED0F7500433D50 /* Build configuration list for PBXNativeTarget "SybolRollerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAAAA192AED0F7500433D50 /* Debug */,
+				BEAAAA1A2AED0F7500433D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEAAA9E02AED0F7400433D50 /* Project object */;
+}

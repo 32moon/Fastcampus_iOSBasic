@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Symbol Roller View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SymbolRollerViewController" customModule="SybolRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aQe-Jq-u0Y">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1gu-nU-LCr">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="579"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2X-GJ-J3o">
+                                        <rect key="frame" x="0.0" y="579" width="393" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="j3i-3k-rBs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tca-G4-eI6">
+                                        <rect key="frame" x="0.0" y="679" width="393" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="7uY-JO-ZmF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrow.3.trianglepath" catalog="system" title="Reload" subtitle="click me to reload" imagePadding="10" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                            <fontDescription key="subtitleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="touchedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9lt-Xk-Z0Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tca-G4-eI6" firstAttribute="leading" secondItem="aQe-Jq-u0Y" secondAttribute="leading" id="de7-WZ-fPG"/>
+                                    <constraint firstItem="1gu-nU-LCr" firstAttribute="leading" secondItem="aQe-Jq-u0Y" secondAttribute="leading" id="efL-fm-2YJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tca-G4-eI6" secondAttribute="trailing" id="ge7-Hf-ry6"/>
+                                    <constraint firstAttribute="trailing" secondItem="I2X-GJ-J3o" secondAttribute="trailing" id="i15-kL-TjZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1gu-nU-LCr" secondAttribute="trailing" id="mkA-yt-bPI"/>
+                                    <constraint firstItem="I2X-GJ-J3o" firstAttribute="leading" secondItem="aQe-Jq-u0Y" secondAttribute="leading" id="sXO-nh-LfF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aQe-Jq-u0Y" secondAttribute="bottom" id="55X-uc-dIs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQe-Jq-u0Y" secondAttribute="trailing" id="Vyg-za-JnD"/>
+                            <constraint firstItem="aQe-Jq-u0Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eXQ-b4-uzN"/>
+                            <constraint firstItem="aQe-Jq-u0Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m3W-PC-o4P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="tca-G4-eI6" id="dph-FC-ItN"/>
+                        <outlet property="imageView" destination="1gu-nU-LCr" id="BT4-rv-KhY"/>
+                        <outlet property="label" destination="I2X-GJ-J3o" id="HZx-To-Aqc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.3.trianglepath" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
