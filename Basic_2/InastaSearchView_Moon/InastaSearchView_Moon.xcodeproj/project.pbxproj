@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5D8C602AF4C26D00FAC77B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5D8C5F2AF4C26D00FAC77B /* HomeViewController.swift */; };
+		BE5D8C622AF4C2A400FAC77B /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5D8C612AF4C2A400FAC77B /* HomeViewCell.swift */; };
 		BE745F7C2AF3C5A400E08D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745F7B2AF3C5A400E08D8F /* AppDelegate.swift */; };
 		BE745F7E2AF3C5A400E08D8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745F7D2AF3C5A400E08D8F /* SceneDelegate.swift */; };
 		BE745F832AF3C5A400E08D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE745F812AF3C5A400E08D8F /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		BE745F932AF3C5A500E08D8F /* InastaSearchView_MoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745F922AF3C5A500E08D8F /* InastaSearchView_MoonTests.swift */; };
 		BE745F9D2AF3C5A500E08D8F /* InastaSearchView_MoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745F9C2AF3C5A500E08D8F /* InastaSearchView_MoonUITests.swift */; };
 		BE745F9F2AF3C5A500E08D8F /* InastaSearchView_MoonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745F9E2AF3C5A500E08D8F /* InastaSearchView_MoonUITestsLaunchTests.swift */; };
+		BE745FAC2AF3CA1B00E08D8F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745FAB2AF3CA1B00E08D8F /* SearchViewController.swift */; };
+		BE745FB02AF3CB5800E08D8F /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745FAF2AF3CB5800E08D8F /* ResultCell.swift */; };
+		BE745FB82AF3E23500E08D8F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE745FB72AF3E23500E08D8F /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE5D8C5F2AF4C26D00FAC77B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BE5D8C612AF4C2A400FAC77B /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		BE745F782AF3C5A400E08D8F /* InastaSearchView_Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InastaSearchView_Moon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE745F7B2AF3C5A400E08D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE745F7D2AF3C5A400E08D8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		BE745F982AF3C5A500E08D8F /* InastaSearchView_MoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InastaSearchView_MoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE745F9C2AF3C5A500E08D8F /* InastaSearchView_MoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InastaSearchView_MoonUITests.swift; sourceTree = "<group>"; };
 		BE745F9E2AF3C5A500E08D8F /* InastaSearchView_MoonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InastaSearchView_MoonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BE745FAB2AF3CA1B00E08D8F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BE745FAF2AF3CB5800E08D8F /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		BE745FB72AF3E23500E08D8F /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 			children = (
 				BE745F7B2AF3C5A400E08D8F /* AppDelegate.swift */,
 				BE745F7D2AF3C5A400E08D8F /* SceneDelegate.swift */,
+				BE745FB72AF3E23500E08D8F /* Image.swift */,
+				BE745FAB2AF3CA1B00E08D8F /* SearchViewController.swift */,
+				BE745FAF2AF3CB5800E08D8F /* ResultCell.swift */,
+				BE5D8C5F2AF4C26D00FAC77B /* HomeViewController.swift */,
+				BE5D8C612AF4C2A400FAC77B /* HomeViewCell.swift */,
 				BE745F812AF3C5A400E08D8F /* Main.storyboard */,
 				BE745F842AF3C5A500E08D8F /* Assets.xcassets */,
 				BE745F862AF3C5A500E08D8F /* LaunchScreen.storyboard */,
@@ -255,8 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE745FAC2AF3CA1B00E08D8F /* SearchViewController.swift in Sources */,
 				BE745F7C2AF3C5A400E08D8F /* AppDelegate.swift in Sources */,
+				BE5D8C622AF4C2A400FAC77B /* HomeViewCell.swift in Sources */,
+				BE745FB02AF3CB5800E08D8F /* ResultCell.swift in Sources */,
 				BE745F7E2AF3C5A400E08D8F /* SceneDelegate.swift in Sources */,
+				BE745FB82AF3E23500E08D8F /* Image.swift in Sources */,
+				BE5D8C602AF4C26D00FAC77B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
