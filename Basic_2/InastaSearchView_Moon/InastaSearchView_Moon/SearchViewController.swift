@@ -32,16 +32,6 @@ class SearchViewController: UIViewController {
             flowLayout.estimatedItemSize = .zero
         }
     }
-    
-    func animalName() -> [String] {
-        var names: [String] = []
-        for num in 1...24 {
-            let imageName = "animal" + "\(num)"
-            names.append(imageName)
-        }
-        return names
-    }
-    
 }
 
 extension SearchViewController: UISearchResultsUpdating {
