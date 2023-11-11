@@ -49,17 +49,17 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-4M-TT0">
                                 <rect key="frame" x="138.66666666666666" y="692" width="115.66666666666666" height="26"/>
                             </pageControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-9N-k8r">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-9N-k8r">
                                 <rect key="frame" x="0.0" y="59" width="393" height="593"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="il2-S7-wUZ">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="il2-S7-wUZ">
                                     <size key="itemSize" width="393" height="593"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="19i-cl-L8L">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="OnboaardingCell" reuseIdentifier="OnboaardingCell" id="19i-cl-L8L" customClass="OnboaardingCell" customModule="NRCOnboarding_moon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="593"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jl8-nX-gnz">
@@ -98,6 +98,11 @@
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="393" height="593"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="EkV-qk-g88" id="FDf-4C-uvj"/>
+                                            <outlet property="thumbnailImageView" destination="PJs-CO-fpR" id="YZU-fa-YNS"/>
+                                            <outlet property="titleLabel" destination="2HB-M3-6qg" id="GpU-7k-20s"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -112,15 +117,19 @@
                             <constraint firstItem="7Za-4M-TT0" firstAttribute="top" secondItem="Ug5-9N-k8r" secondAttribute="bottom" constant="40" id="RLn-pe-8J9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oVD-fs-Rel" secondAttribute="bottom" id="Sjf-M0-tPN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVD-fs-Rel" secondAttribute="trailing" id="WtQ-9A-T25"/>
-                            <constraint firstItem="Ug5-9N-k8r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="XgG-Xc-VFN"/>
+                            <constraint firstItem="Ug5-9N-k8r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XgG-Xc-VFN"/>
                             <constraint firstItem="oVD-fs-Rel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YEl-7J-lhR"/>
                             <constraint firstItem="Ug5-9N-k8r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bAb-Vw-1R9"/>
                             <constraint firstItem="iSG-Rp-KXO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="beW-5g-fpd"/>
                             <constraint firstItem="7Za-4M-TT0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eEh-EF-C2i"/>
                             <constraint firstItem="oVD-fs-Rel" firstAttribute="top" secondItem="7Za-4M-TT0" secondAttribute="bottom" constant="40" id="ekw-Yv-Dlq"/>
-                            <constraint firstItem="Ug5-9N-k8r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n9A-QV-E9o"/>
+                            <constraint firstItem="Ug5-9N-k8r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n9A-QV-E9o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Ug5-9N-k8r" id="nUy-EJ-sga"/>
+                        <outlet property="pageControll" destination="7Za-4M-TT0" id="1bL-Jv-GVe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

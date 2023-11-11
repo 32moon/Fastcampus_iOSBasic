@@ -17,6 +17,7 @@
 		BE79926D2AFDF26200E78A4A /* NRCOnboarding_moonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79926C2AFDF26200E78A4A /* NRCOnboarding_moonUITestsLaunchTests.swift */; };
 		BE79927A2AFDF2AC00E78A4A /* OnboardingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7992792AFDF2AC00E78A4A /* OnboardingMessage.swift */; };
 		BE79927C2AFDF32A00E78A4A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79927B2AFDF32A00E78A4A /* OnboardingViewController.swift */; };
+		BE79927E2AFF4A3300E78A4A /* OnboaardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79927D2AFF4A3300E78A4A /* OnboaardingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BE79926C2AFDF26200E78A4A /* NRCOnboarding_moonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRCOnboarding_moonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BE7992792AFDF2AC00E78A4A /* OnboardingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMessage.swift; sourceTree = "<group>"; };
 		BE79927B2AFDF32A00E78A4A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		BE79927D2AFF4A3300E78A4A /* OnboaardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboaardingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BE79924B2AFDF26100E78A4A /* SceneDelegate.swift */,
 				BE7992792AFDF2AC00E78A4A /* OnboardingMessage.swift */,
 				BE79927B2AFDF32A00E78A4A /* OnboardingViewController.swift */,
+				BE79927D2AFF4A3300E78A4A /* OnboaardingCell.swift */,
 				BE79924F2AFDF26100E78A4A /* Main.storyboard */,
 				BE7992522AFDF26100E78A4A /* Assets.xcassets */,
 				BE7992542AFDF26100E78A4A /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				BE79927A2AFDF2AC00E78A4A /* OnboardingMessage.swift in Sources */,
 				BE79924C2AFDF26100E78A4A /* SceneDelegate.swift in Sources */,
 				BE79927C2AFDF32A00E78A4A /* OnboardingViewController.swift in Sources */,
+				BE79927E2AFF4A3300E78A4A /* OnboaardingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
