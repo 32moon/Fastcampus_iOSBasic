@@ -47,6 +47,7 @@ class FrameworkListViewController: UIViewController {
         collectionView.collectionViewLayout = layout()
 
     }
+    
     private func layout() -> UICollectionViewCompositionalLayout {
         
         let itemSize = NSCollectionLayoutSize(
