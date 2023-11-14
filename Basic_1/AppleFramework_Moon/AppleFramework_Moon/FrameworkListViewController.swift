@@ -9,62 +9,70 @@ import UIKit
 
 class FrameworkListViewController: UIViewController {
     
-    let list = AppleFramework.list
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let list: [AppleFramework] = AppleFramework.list
+    
+    var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
+    
+    typealias Item = AppleFramework
+    enum Section {
+        case main
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        collectionView.dataSource = self
-        collectionView.delegate = self
         
         // 네비게이션 타이틀 바꾸기
         navigationController?.navigationBar.topItem?.title = "🥳 Apple Frameworks"
         
-        if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowlayout.estimatedItemSize = .zero
-            // 자동으로 계산되는 것을 none 으로 설정
-        }
         
-        collectionView.contentInset = UIEdgeInsets(top: 20, left: 16, bottom: 0, right: 16)
-    }
-}
+        // presentation, data, layout
+        // diffable datasoure -> presentation
+        dataSource = UICollectionViewDiffableDataSource<Section,Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FrameworkCollectionViewCell", for: indexPath) as? FrameworkCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            cell.configure(item)
+            return cell
+        })
+        
+        // snap shot -> data
+        var snapShot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapShot.appendSections([.main])
+        snapShot.appendItems(list, toSection: .main)
+        dataSource.apply(snapShot)
+        
+        // compositional layout -> layout
+        collectionView.collectionViewLayout = layout()
 
-extension FrameworkListViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return list.count
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FrameworkCollectionViewCell", for: indexPath) as? FrameworkCollectionViewCell else {
-            return UICollectionViewCell()
-        }
+    private func layout() -> UICollectionViewCompositionalLayout {
         
-        let framework = list[indexPath.item]
-        cell.configure(framework)
+        let itemSize = NSCollectionLayoutSize(
+            // fractionalWidth -> 스크린에 할당된 구역에서 가로로 그 만큼 나눈다는 뜻
+            widthDimension: .fractionalWidth(0.33),
+            // fractionalHeight -> 그룹의 크기에 대해 아이템의 크기가 그 만큼 정해진다는 뜻
+            heightDimension: .fractionalHeight(1))
+        let item = NSCollectionLayoutItem(
+            layoutSize: itemSize)
         
-        return cell
-    }
-}
-
-extension FrameworkListViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let groupSize = NSCollectionLayoutSize(
+            // fractionalWidth -> 섹션의 크기에 대해 아이템의 크기가 그만큼 정해진다는 뜻
+            widthDimension:.fractionalWidth(1),
+            // fractionalWidth -> 섹션의 크기에 대해 아이템의 크기가 그만큼 정해진다는 뜻
+            heightDimension: .fractionalWidth(0.45))
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: groupSize,
+            repeatingSubitem: item, count: 3)
         
-        let interItemSpacting: CGFloat = 10
-        let padding: CGFloat = 16
-        let width = (collectionView.bounds.width - padding * 2 - interItemSpacting * 2) / 3
-        let height = width * 1.5
+        let section = NSCollectionLayoutSection(
+            group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
         
-        return CGSize(width: width, height: height)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        let layout = UICollectionViewCompositionalLayout(
+            section: section)
+        return layout
     }
 }
 

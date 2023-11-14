@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,7 +29,7 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FrameworkCollectionViewCell" id="mxy-hh-NVa" customClass="FrameworkCollectionViewCell" customModule="AppleFramework_Moon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="212"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kDA-ab-BMF">
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="166" height="212"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -47,15 +46,15 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="suN-rM-6Kz" firstAttribute="centerX" secondItem="kDA-ab-BMF" secondAttribute="centerX" id="2uh-Uu-oVr"/>
-                                                <constraint firstItem="suN-rM-6Kz" firstAttribute="top" secondItem="f2T-8H-0gJ" secondAttribute="bottom" constant="4" id="EN2-i8-WWw"/>
-                                                <constraint firstItem="f2T-8H-0gJ" firstAttribute="top" secondItem="kDA-ab-BMF" secondAttribute="top" id="LEG-dK-gzR"/>
-                                                <constraint firstItem="suN-rM-6Kz" firstAttribute="leading" secondItem="kDA-ab-BMF" secondAttribute="leading" constant="10" id="Ohc-AQ-7Zp"/>
-                                                <constraint firstAttribute="trailing" secondItem="f2T-8H-0gJ" secondAttribute="trailing" id="W1X-ll-LhO"/>
-                                                <constraint firstItem="f2T-8H-0gJ" firstAttribute="leading" secondItem="kDA-ab-BMF" secondAttribute="leading" id="gSc-m7-dcR"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="suN-rM-6Kz" firstAttribute="centerX" secondItem="mxy-hh-NVa" secondAttribute="centerX" id="2uh-Uu-oVr"/>
+                                            <constraint firstItem="suN-rM-6Kz" firstAttribute="top" secondItem="f2T-8H-0gJ" secondAttribute="bottom" constant="4" id="EN2-i8-WWw"/>
+                                            <constraint firstItem="f2T-8H-0gJ" firstAttribute="top" secondItem="mxy-hh-NVa" secondAttribute="top" id="LEG-dK-gzR"/>
+                                            <constraint firstItem="suN-rM-6Kz" firstAttribute="leading" secondItem="mxy-hh-NVa" secondAttribute="leading" constant="10" id="Ohc-AQ-7Zp"/>
+                                            <constraint firstAttribute="trailing" secondItem="f2T-8H-0gJ" secondAttribute="trailing" id="W1X-ll-LhO"/>
+                                            <constraint firstItem="f2T-8H-0gJ" firstAttribute="leading" secondItem="mxy-hh-NVa" secondAttribute="leading" id="gSc-m7-dcR"/>
+                                        </constraints>
                                         <size key="customSize" width="166" height="212"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="suN-rM-6Kz" id="PFB-JB-Ob7"/>
@@ -89,7 +88,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1P0-N2-mqL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JXU-LR-usw">
-                        <rect key="frame" x="0.0" y="59" width="393" height="104.33333333333334"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
