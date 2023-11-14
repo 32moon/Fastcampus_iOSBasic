@@ -16,6 +16,8 @@
 		BE4C59DB2B03980D002C1D2F /* HandSpaceFocus_MoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C59DA2B03980D002C1D2F /* HandSpaceFocus_MoonUITests.swift */; };
 		BE4C59DD2B03980D002C1D2F /* HandSpaceFocus_MoonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C59DC2B03980D002C1D2F /* HandSpaceFocus_MoonUITestsLaunchTests.swift */; };
 		BE4C59EA2B03982A002C1D2F /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C59E92B03982A002C1D2F /* Focus.swift */; };
+		BE4C59EC2B039AF8002C1D2F /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C59EB2B039AF8002C1D2F /* FocusViewController.swift */; };
+		BE4C59EE2B039D6E002C1D2F /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C59ED2B039D6E002C1D2F /* FocusCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BE4C59DA2B03980D002C1D2F /* HandSpaceFocus_MoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSpaceFocus_MoonUITests.swift; sourceTree = "<group>"; };
 		BE4C59DC2B03980D002C1D2F /* HandSpaceFocus_MoonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandSpaceFocus_MoonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BE4C59E92B03982A002C1D2F /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		BE4C59EB2B039AF8002C1D2F /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		BE4C59ED2B039D6E002C1D2F /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				BE4C59B92B03980C002C1D2F /* AppDelegate.swift */,
 				BE4C59BB2B03980C002C1D2F /* SceneDelegate.swift */,
 				BE4C59E92B03982A002C1D2F /* Focus.swift */,
+				BE4C59EB2B039AF8002C1D2F /* FocusViewController.swift */,
+				BE4C59ED2B039D6E002C1D2F /* FocusCell.swift */,
 				BE4C59BF2B03980C002C1D2F /* Main.storyboard */,
 				BE4C59C22B03980D002C1D2F /* Assets.xcassets */,
 				BE4C59C42B03980D002C1D2F /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			files = (
 				BE4C59EA2B03982A002C1D2F /* Focus.swift in Sources */,
 				BE4C59BA2B03980C002C1D2F /* AppDelegate.swift in Sources */,
+				BE4C59EE2B039D6E002C1D2F /* FocusCell.swift in Sources */,
 				BE4C59BC2B03980C002C1D2F /* SceneDelegate.swift in Sources */,
+				BE4C59EC2B039AF8002C1D2F /* FocusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
