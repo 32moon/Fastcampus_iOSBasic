@@ -26,6 +26,8 @@ class FocusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.delegate = self
+        
         datasource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FocusCell", for: indexPath) as? FocusCell else {
                 return UICollectionViewCell()
@@ -80,5 +82,17 @@ class FocusViewController: UIViewController {
     private func updatButtonTitle() {
         let title = curated ? "See All" : "See Recommendation"
         refreshButton.setTitle(title, for: .normal)
+    }
+}
+
+extension FocusViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.item]
+        print(">>> \(item.title)")
+        
+        let storyboard = UIStoryboard(name: "QuickFocus", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "QuickFocusViewController") as! QuickFocusViewController
+        viewController.title = item.title
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
