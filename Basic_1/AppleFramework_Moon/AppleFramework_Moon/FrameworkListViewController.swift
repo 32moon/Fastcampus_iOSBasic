@@ -23,6 +23,8 @@ class FrameworkListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.delegate = self
+        
         // 네비게이션 타이틀 바꾸기
         navigationController?.navigationBar.topItem?.title = "🥳 Apple Frameworks"
         
@@ -81,5 +83,11 @@ extension FrameworkListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let framework = list[indexPath.item]
         print(">>>> selected: \(framework.name)")
+        
+        // FrameworkDetailViewController 띄우기
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
+        viewController.framework = framework
+        present(viewController, animated: true)
     }
 }

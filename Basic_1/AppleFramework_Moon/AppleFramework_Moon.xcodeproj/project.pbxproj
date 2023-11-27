@@ -19,6 +19,8 @@
 		BE61F6F52AEFAF0A00A056E8 /* FrameworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */; };
 		BE61F6F72AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */; };
 		BE7992802B03674600E78A4A /* FrameworkListViewController_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */; };
+		BE8F63852B14776F00D21359 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8F63842B14776F00D21359 /* Detail.storyboard */; };
+		BE8F63872B14778800D21359 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController.swift; sourceTree = "<group>"; };
 		BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController_1.swift; sourceTree = "<group>"; };
+		BE8F63842B14776F00D21359 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,9 @@
 				BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */,
 				BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */,
 				BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */,
+				BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */,
 				BE61F6C82AEFAE4500A056E8 /* Main.storyboard */,
+				BE8F63842B14776F00D21359 /* Detail.storyboard */,
 				BE61F6CB2AEFAE4600A056E8 /* Assets.xcassets */,
 				BE61F6CD2AEFAE4600A056E8 /* LaunchScreen.storyboard */,
 				BE61F6D02AEFAE4600A056E8 /* Info.plist */,
@@ -243,6 +249,7 @@
 				BE61F6CF2AEFAE4600A056E8 /* LaunchScreen.storyboard in Resources */,
 				BE61F6CC2AEFAE4600A056E8 /* Assets.xcassets in Resources */,
 				BE61F6CA2AEFAE4500A056E8 /* Main.storyboard in Resources */,
+				BE8F63852B14776F00D21359 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8F63872B14778800D21359 /* FrameworkDetailViewController.swift in Sources */,
 				BE61F6F72AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift in Sources */,
 				BE61F6C32AEFAE4500A056E8 /* AppDelegate.swift in Sources */,
 				BE61F6F32AEFAE7200A056E8 /* FrameworkData.swift in Sources */,
