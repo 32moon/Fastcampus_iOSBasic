@@ -4,11 +4,11 @@
         <page name='Publisher &amp; Subscriber'/>
         <page name='Subject'/>
         <page name='Subscription'/>
+        <page name='Published'/>
         <page name='Foundation and Combine'/>
         <page name='Operator - combineLatest'/>
         <page name='Operator - map &amp; filter'/>
         <page name='Operator - removeDup &amp; compactMap'/>
-        <page name='Published'/>
         <page name='Scheduler'/>
     </pages>
 </playground>
