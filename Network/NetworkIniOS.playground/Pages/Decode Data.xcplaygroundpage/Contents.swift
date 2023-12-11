@@ -33,6 +33,7 @@ let task = session.dataTask(with: url) { data, response, error in
     }
     
     guard let data = data else { return }
+    
     do {
         let decoder = JSONDecoder()
         let profile = try decoder.decode(GithubProfile.self, from: data)
