@@ -17,6 +17,7 @@
 		BE8AF0692B29823900D39241 /* GithubUserProfile_moonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0682B29823900D39241 /* GithubUserProfile_moonUITestsLaunchTests.swift */; };
 		BE8AF0762B2983A100D39241 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0752B2983A100D39241 /* SearchViewController.swift */; };
 		BE8AF0782B29855300D39241 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0772B29855300D39241 /* UserProfile.swift */; };
+		BE8AF07A2B2990A600D39241 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0792B2990A600D39241 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BE8AF0682B29823900D39241 /* GithubUserProfile_moonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserProfile_moonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BE8AF0752B2983A100D39241 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BE8AF0772B29855300D39241 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		BE8AF0792B2990A600D39241 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				BE8AF0452B29823800D39241 /* AppDelegate.swift */,
 				BE8AF0472B29823800D39241 /* SceneDelegate.swift */,
+				BE8AF0792B2990A600D39241 /* NetworkService.swift */,
 				BE8AF04B2B29823800D39241 /* Main.storyboard */,
 				BE8AF0752B2983A100D39241 /* SearchViewController.swift */,
 				BE8AF0772B29855300D39241 /* UserProfile.swift */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8AF07A2B2990A600D39241 /* NetworkService.swift in Sources */,
 				BE8AF0782B29855300D39241 /* UserProfile.swift in Sources */,
 				BE8AF0762B2983A100D39241 /* SearchViewController.swift in Sources */,
 				BE8AF0462B29823800D39241 /* AppDelegate.swift in Sources */,
