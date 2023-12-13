@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import Kingfisher
 
 class SearchViewController: UIViewController {
     
@@ -64,7 +65,7 @@ class SearchViewController: UIViewController {
         self.loginLabel.text = user.login
         self.followerLabel.text = "follower: \(user.followers)"
         self.followingLabel.text = "follower: \(user.following)"
-        self.thubnailImageView.image = nil
+        self.thubnailImageView.kf.setImage(with: user.avatarUrl)
     }
 }
 
@@ -114,6 +115,11 @@ extension SearchViewController: UISearchBarDelegate {
             .receive(on: RunLoop.main)
             .sink { completion in
                 print("completion: \(completion)")
+                switch completion {
+                case .failure(let error):
+                    self.user = nil
+                case .finished: break
+                }
             } receiveValue: { user in
                 self.user = user
             }.store(in: &subscriptions)
