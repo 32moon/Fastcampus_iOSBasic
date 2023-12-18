@@ -19,6 +19,8 @@
 		BE8AF0782B29855300D39241 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0772B29855300D39241 /* UserProfile.swift */; };
 		BE8AF07A2B2990A600D39241 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0792B2990A600D39241 /* NetworkService.swift */; };
 		BE8AF07D2B29955100D39241 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BE8AF07C2B29955100D39241 /* Kingfisher */; };
+		BE8AF07F2B2FEC4500D39241 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF07E2B2FEC4500D39241 /* Resource.swift */; };
+		BE8AF0812B2FEC7900D39241 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0802B2FEC7900D39241 /* Publisher+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		BE8AF0752B2983A100D39241 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BE8AF0772B29855300D39241 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		BE8AF0792B2990A600D39241 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BE8AF07E2B2FEC4500D39241 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		BE8AF0802B2FEC7900D39241 /* Publisher+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +111,13 @@
 			children = (
 				BE8AF0452B29823800D39241 /* AppDelegate.swift */,
 				BE8AF0472B29823800D39241 /* SceneDelegate.swift */,
-				BE8AF0792B2990A600D39241 /* NetworkService.swift */,
+				BE8AF0822B2FEEE500D39241 /* Utils */,
+				BE8AF0832B2FEF0000D39241 /* Network */,
 				BE8AF04B2B29823800D39241 /* Main.storyboard */,
 				BE8AF0752B2983A100D39241 /* SearchViewController.swift */,
-				BE8AF0772B29855300D39241 /* UserProfile.swift */,
-				BE8AF04E2B29823900D39241 /* Assets.xcassets */,
+				BE8AF0842B2FEF1800D39241 /* Model */,
 				BE8AF0502B29823900D39241 /* LaunchScreen.storyboard */,
+				BE8AF04E2B29823900D39241 /* Assets.xcassets */,
 				BE8AF0532B29823900D39241 /* Info.plist */,
 			);
 			path = GithubUserProfile_moon;
@@ -133,6 +138,31 @@
 				BE8AF0682B29823900D39241 /* GithubUserProfile_moonUITestsLaunchTests.swift */,
 			);
 			path = GithubUserProfile_moonUITests;
+			sourceTree = "<group>";
+		};
+		BE8AF0822B2FEEE500D39241 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AF0802B2FEC7900D39241 /* Publisher+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE8AF0832B2FEF0000D39241 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AF0792B2990A600D39241 /* NetworkService.swift */,
+				BE8AF07E2B2FEC4500D39241 /* Resource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BE8AF0842B2FEF1800D39241 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AF0772B29855300D39241 /* UserProfile.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +305,8 @@
 				BE8AF07A2B2990A600D39241 /* NetworkService.swift in Sources */,
 				BE8AF0782B29855300D39241 /* UserProfile.swift in Sources */,
 				BE8AF0762B2983A100D39241 /* SearchViewController.swift in Sources */,
+				BE8AF07F2B2FEC4500D39241 /* Resource.swift in Sources */,
+				BE8AF0812B2FEC7900D39241 /* Publisher+Utils.swift in Sources */,
 				BE8AF0462B29823800D39241 /* AppDelegate.swift in Sources */,
 				BE8AF0482B29823800D39241 /* SceneDelegate.swift in Sources */,
 			);

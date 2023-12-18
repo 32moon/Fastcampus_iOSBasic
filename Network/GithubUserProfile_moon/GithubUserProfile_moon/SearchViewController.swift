@@ -11,10 +11,12 @@ import Kingfisher
 
 class SearchViewController: UIViewController {
     
+    let network = NetworkService(configuration: .default)
+    
     // private(set) var에 대하여: https://velog.io/@minji0801/iOS-Swift-private-set
     @Published private(set) var user: UserProfile?
     var subscriptions = Set<AnyCancellable>()
-
+    
     @IBOutlet weak var thubnailImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var loginLabel: UILabel!
@@ -83,45 +85,65 @@ extension SearchViewController: UISearchBarDelegate {
         guard let keyword = searchBar.text, !keyword.isEmpty else { return }
         "http://api.github.com/users/\(keyword)"
         
-        let base = "http://api.github.com/"
-        let path = "users/\(keyword)"
-        let params: [String: String] = [:]
-        let header: [String: String] = ["Content-Type":"application/jason"]
+        // Resource
+        let resource = Resource<UserProfile>(
+            base: "http://api.github.com/",
+            path: "users/\(keyword)",
+            params: [:],
+            header: ["Content-Type":"application/jason"])
         
-        var urlcomponents = URLComponents(string: base + path)!
-        let queryItem = params.map { (key: String, value: String) in
-            URLQueryItem(name: key, value: value)
-        }
+        //        let base = "http://api.github.com/"
+        //        let path = "users/\(keyword)"
+        //        let params: [String: String] = [:]
+        //        let header: [String: String] = ["Content-Type":"application/jason"]
+        //
+        //        var urlcomponents = URLComponents(string: base + path)!
+        //        let queryItem = params.map { (key: String, value: String) in
+        //            URLQueryItem(name: key, value: value)
+        //        }
+        //
+        //        urlcomponents.queryItems = queryItem
+        //
+        //        var request = URLRequest(url: urlcomponents.url!)
+        //        header.forEach { (key: String, value: String) in
+        //            request.addValue(value, forHTTPHeaderField: key)
+        //        }
         
-        urlcomponents.queryItems = queryItem
-        
-        var request = URLRequest(url: urlcomponents.url!)
-        header.forEach { (key: String, value: String) in
-            request.addValue(value, forHTTPHeaderField: key)
-        }
-        
-        URLSession.shared
-            .dataTaskPublisher(for: request)
-            .tryMap { result -> Data in
-                guard let response = result.response as? HTTPURLResponse,
-                      (200..<300).contains(response.statusCode) else {
-                    let response = result.response as? HTTPURLResponse
-                    let statusCode = response?.statusCode ?? -1
-                    throw NetworkError.responseError(statusCode: statusCode)
-                }
-                return result.data
-            }
-            .decode(type: UserProfile.self, decoder: JSONDecoder())
+        // NetworkService
+        network.load(resource)
             .receive(on: RunLoop.main)
             .sink { completion in
-                print("completion: \(completion)")
                 switch completion {
                 case .failure(let error):
                     self.user = nil
                 case .finished: break
                 }
-            } receiveValue: { user in
+            } receiveValue : { user in
                 self.user = user
             }.store(in: &subscriptions)
+        
+        //        URLSession.shared
+        //            .dataTaskPublisher(for: request)
+        //            .tryMap { result -> Data in
+        //                guard let response = result.response as? HTTPURLResponse,
+        //                      (200..<300).contains(response.statusCode) else {
+        //                    let response = result.response as? HTTPURLResponse
+        //                    let statusCode = response?.statusCode ?? -1
+        //                    throw NetworkError.responseError(statusCode: statusCode)
+        //                }
+        //                return result.data
+        //            }
+        //            .decode(type: UserProfile.self, decoder: JSONDecoder())
+        //            .receive(on: RunLoop.main)
+        //            .sink { completion in
+        //                print("completion: \(completion)")
+        //                switch completion {
+        //                case .failure(let error):
+        //                    self.user = nil
+        //                case .finished: break
+        //                }
+        //            } receiveValue: { user in
+        //                self.user = user
+        //            }.store(in: &subscriptions)
     }
 }
