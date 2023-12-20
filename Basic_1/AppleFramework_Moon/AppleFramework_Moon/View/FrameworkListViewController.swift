@@ -19,16 +19,14 @@ class FrameworkListViewController: UIViewController {
         case main
     }
     
-//    let list: [AppleFramework] = AppleFramework.list
-    
     // Combine
     var subscriptions = Set<AnyCancellable>()
-    let didSelect = PassthroughSubject<AppleFramework, Never>()
-    let items = CurrentValueSubject<[AppleFramework], Never>(AppleFramework.list)
-//    @Published var list: [AppleFramework] = AppleFramework.list
- 
+    
+    var viewModel: FrameworkLsitViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = FrameworkLsitViewModel(items: AppleFramework.list)
         configureCollectionView()
         bind()
         
@@ -38,33 +36,29 @@ class FrameworkListViewController: UIViewController {
     
     // 해당 뷰에서의 핵심 로직을 한 곳에 모아둠
     private func bind() {
-        // input: 사용자 인풋을 받아서 처리해야 할 것
-        // - item 선택 되었을 때 처리
-        didSelect
-            .receive(on: RunLoop.main)
-            .sink { [unowned self] framework in
-            let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
-                viewController.framework.send(framework)
-            self.present(viewController, animated: true)
-        }.store(in: &subscriptions)
-        
-        // output: data, state 변경에 따라서 UI업데이트
-        // - items 가 세팅이 되었을 때 컬렉션뷰를 업데이트
-        items
+        viewModel.items
             .receive(on: RunLoop.main)
             .sink { [unowned self] list in
-            self.applySectionItems(list)
-        }.store(in: &subscriptions)
+                self.applySectionItems(list)
+            }.store(in: &subscriptions)
         
+        viewModel.selectedItem
+            .compactMap { $0 }
+            .receive(on: RunLoop.main)
+            .sink { [unowned self] framework in
+                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
+                viewController.viewModel = FrameworkDetailViewModel(framework: framework)
+                self.present(viewController, animated: true)
+            }.store(in: &subscriptions)
     }
     
     private func  applySectionItems(_ items: [Item], to section: Section = .main) {
-         // snap shot -> data
-         var snapShot = NSDiffableDataSourceSnapshot<Section, Item>()
-         snapShot.appendSections([section])
-         snapShot.appendItems(items, toSection: section)
-         dataSource.apply(snapShot)
+        // snap shot -> data
+        var snapShot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapShot.appendSections([section])
+        snapShot.appendItems(items, toSection: section)
+        dataSource.apply(snapShot)
     }
     
     private func configureCollectionView() {
@@ -114,9 +108,6 @@ class FrameworkListViewController: UIViewController {
 
 extension FrameworkListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let framework = list[indexPath.item]
-        let framework = items.value[indexPath.item]
-        print(">>>> selected: \(framework.name)")
-        didSelect.send(framework)
+        viewModel.didSelect(at: indexPath)
     }
 }

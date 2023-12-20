@@ -19,6 +19,8 @@
 		BE61F6F52AEFAF0A00A056E8 /* FrameworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */; };
 		BE61F6F72AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */; };
 		BE7992802B03674600E78A4A /* FrameworkListViewController_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */; };
+		BE8AF0D82B3317C100D39241 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0D72B3317C100D39241 /* FrameworkListViewModel.swift */; };
+		BE8AF0DA2B3317D500D39241 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AF0D92B3317D500D39241 /* FrameworkDetailViewModel.swift */; };
 		BE8F63852B14776F00D21359 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8F63842B14776F00D21359 /* Detail.storyboard */; };
 		BE8F63872B14778800D21359 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController.swift; sourceTree = "<group>"; };
 		BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewController_1.swift; sourceTree = "<group>"; };
+		BE8AF0D72B3317C100D39241 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		BE8AF0D92B3317D500D39241 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		BE8F63842B14776F00D21359 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,11 +115,9 @@
 			children = (
 				BE61F6C22AEFAE4500A056E8 /* AppDelegate.swift */,
 				BE61F6C42AEFAE4500A056E8 /* SceneDelegate.swift */,
-				BE61F6F22AEFAE7200A056E8 /* FrameworkData.swift */,
-				BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */,
-				BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */,
-				BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */,
-				BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */,
+				BE8AF0D52B33178D00D39241 /* Model */,
+				BE8AF0D62B33179E00D39241 /* View */,
+				BE8AF0DB2B331EC100D39241 /* ViewModel */,
 				BE61F6C82AEFAE4500A056E8 /* Main.storyboard */,
 				BE8F63842B14776F00D21359 /* Detail.storyboard */,
 				BE61F6CB2AEFAE4600A056E8 /* Assets.xcassets */,
@@ -140,6 +142,34 @@
 				BE61F6E52AEFAE4600A056E8 /* AppleFramework_MoonUITestsLaunchTests.swift */,
 			);
 			path = AppleFramework_MoonUITests;
+			sourceTree = "<group>";
+		};
+		BE8AF0D52B33178D00D39241 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE61F6F22AEFAE7200A056E8 /* FrameworkData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE8AF0D62B33179E00D39241 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE79927F2B03674600E78A4A /* FrameworkListViewController_1.swift */,
+				BE61F6F42AEFAF0A00A056E8 /* FrameworkListViewController.swift */,
+				BE61F6F62AEFB2F200A056E8 /* FrameworkCollectionViewCell.swift */,
+				BE8F63862B14778800D21359 /* FrameworkDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE8AF0DB2B331EC100D39241 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AF0D72B3317C100D39241 /* FrameworkListViewModel.swift */,
+				BE8AF0D92B3317D500D39241 /* FrameworkDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +309,8 @@
 				BE61F6C32AEFAE4500A056E8 /* AppDelegate.swift in Sources */,
 				BE61F6F32AEFAE7200A056E8 /* FrameworkData.swift in Sources */,
 				BE7992802B03674600E78A4A /* FrameworkListViewController_1.swift in Sources */,
+				BE8AF0D82B3317C100D39241 /* FrameworkListViewModel.swift in Sources */,
+				BE8AF0DA2B3317D500D39241 /* FrameworkDetailViewModel.swift in Sources */,
 				BE61F6C52AEFAE4500A056E8 /* SceneDelegate.swift in Sources */,
 				BE61F6F52AEFAF0A00A056E8 /* FrameworkListViewController.swift in Sources */,
 			);
